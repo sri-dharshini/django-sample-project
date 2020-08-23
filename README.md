@@ -1,2 +1,2 @@
 # django-sample-project
-website for students details
+website for students information
