@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>student details</title>
+<!-- <link rel="stylesheet" href="{% static 'css/student.css' %}"> -->
+<style>
+table, th, td {
+
+  border-collapse: collapse;
+  border: 2px solid grey;
+  padding: 5px;
+  font-size:25px;
+  width:400px;
+
+  margin:100px auto;
+
+}
+input{
+  width:10%;
+  padding: 12px 10px;
+  margin: 10px 670px;
+  display: inline-block;
+  border: 2px solid black;
+  box-sizing: border-box;
+  background-color:lightblue;
+
+}
+td:first-child{
+  font-weight: bold;
+
+}
+</style>
+</head>
+<body>
+  <table>
+  <tr>
+    <td>StudentId</td>
+    <td>{{id}}</td>
+  </tr>
+  <tr>
+    <td>StudentName</td>
+    <td>{{name}}</td>
+  </tr>
+  <tr>
+    <td>Gender</td>
+    <td>{{gen}}</td>
+  </tr>
+  <tr>
+    <td>DateOfBirth</td>
+    <td>{{dob}}</td>
+  </tr>
+  <tr>
+    <td>City</td>
+    <td>{{cit}}</td>
+  </tr>
+  <tr>
+    <td>State</td>
+    <td>{{sta}}</td>
+  </tr>
+  <tr>
+    <td>EmailId</td>
+    <td>{{mai}}</td>
+  </tr>
+  <tr>
+    <td>Qualification</td>
+    <td>{{qua}}</td>
+  </tr>
+  <tr>
+    <td>Stream</td>
+    <td>{{str}}</td>
+  </tr>
+
+</table>
+  <form action="ret" >
+    <input type="submit" value="Home">
+
+  </form>
+</body>
+</html>
